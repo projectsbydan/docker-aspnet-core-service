@@ -3,5 +3,5 @@ RUN git clone https://github.com/projectsbydan/docker-aspnet-core-service.git ./
 WORKDIR /source
 RUN ["dotnet","restore"]
 RUN ["dotnet","build"]
-EXPOSE 443/tcp
-CMD dotnet run --server.urls https://*:443
+EXPOSE 5001/tcp
+CMD dotnet run
