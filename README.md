@@ -1,0 +1,1 @@
+# docker-aspnet-core-service
