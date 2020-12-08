@@ -1,5 +1,5 @@
 FROM mcr.microsoft.com/dotnet/sdk:3.1
-WORKDIR .
+RUN git clone https://github.com/projectsbydan/docker-aspnet-core-service.git
 RUN ["dotnet","restore"]
 RUN ["dotnet","build"]
 EXPOSE 443/tcp
