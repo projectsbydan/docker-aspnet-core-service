@@ -1,4 +1,5 @@
 FROM mcr.microsoft.com/dotnet/sdk:3.1
+WORKDIR .
 RUN ["dotnet","restore"]
 RUN ["dotnet","build"]
 EXPOSE 443/tcp
